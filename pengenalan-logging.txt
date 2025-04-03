@@ -1,0 +1,57 @@
+Logging
+log file adalah file yang berisikan informasi kejadian dari sebuah sistem
+biasanya dalam log file terdapat informasi waktu kejadian dan pesan kejadian 
+logging adalah aksi menambah informasi log ke log file
+logging sudah menjadi standard industri untuk menampilkam informasi yang terjadi di aplikasi yang kita buat 
+logging juga bukan hanya untuk menampilkan informasi, kadang di gunakan untuk proses debugging ketika terjadi masalah di aplikasi kita.
+
+Nodejs logging
+nodejs sendiri sebenarnya memiliki fitur untuk melakukan logging dengan object console 
+namun saat ini, kebanyakan programer hanya menggunakan fitur ini padaq kasus-kasus yang sederhana
+hal ini dikarenakan penggunanya yang kurang flexsibel dan minim fitur.
+
+Logging Liberary 
+di luar nodejs logging banyakm sekali liberary yang bisa kita guankan untuk logging seperti:
+WINSTON
+BUNYAN
+PINO
+LOGLEVEL
+NPMLOG
+
+Wnston 
+untuk saat ini kita akan belajar menggunakan winston 
+winston merupakan logging liberary yang sangat populer dikalangan programer nodejs
+
+Logger
+logger adalah sebuah object di winston, yang digunakan untuk melakuakan logging
+untuk membuat object logger kita bisa menngunakan function creatLogger() yang terdapat di package/module winston
+
+Console Transport
+saat membuat logger secara default logger tidak akan menggunakan transport 
+apa itu transport? transport adalah destinasi atau target 
+yang di gunakan untuk mengirim log 
+ada banyak sekali transport yang paling sederhana adalah console 
+console merupakan transport yang digunakan untuk mengirim data log ke console/stdout.
+
+Logging Level 
+Level 
+dalam logging terdapat istilah yang bernama level, biasanya digunakan sebagai informasi seberapa penting log tersebut
+level di mulai dari yang paling rendah ke paling tinggi semakin tinggi levelnya artinya semakin penting informasi log tersebut 
+untuk menambahkan level ketika melakukan log kita bisa ubah attribut level menjadi level yang kita inginkan
+
+Winston Level:
+error: untuk error
+warn: untuk peringatan
+info: untuk memberitahu info
+http: untuk memberitahu tentang http
+verbose: untuk melihat detail verbose 
+debug: untuk memeberitahu debugging
+silly: untuk pengujian saja
+
+secara default saat kita membuat logger hanya akan menampilkan log dengan level info atau level di atasnya
+jika kita ingin merubah log level dan mana yang kita ingin tampilkan maka kita perlu ubah konfiigurasi level ketika kita membuat logger dengan menggunakan level minimal yang ingin kita tampilkan
+
+Shortcut function
+logger juga memiliki function shortcut yang bisa digunakan untuk melakukan logging sehingga kita tidak perlu menggunakan function log dan object dengan attribute level lagi 
+kita bisa langsung menggunakan function dengan nama sesuai dengan levelnyamisal logger.info(mesaage). 
+
