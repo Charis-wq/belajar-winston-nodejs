@@ -55,3 +55,21 @@ Shortcut function
 logger juga memiliki function shortcut yang bisa digunakan untuk melakukan logging sehingga kita tidak perlu menggunakan function log dan object dengan attribute level lagi 
 kita bisa langsung menggunakan function dengan nama sesuai dengan levelnyamisal logger.info(mesaage). 
 
+Format
+format adalah object yang digunakan untuk melakukan formating data log sebelum dikirim ke transport
+saat kita membuat logger secara default logger akan menggunakan json format artinya data akan dikirim dalam bentuk json 
+winston juga menyediakan banyak format lain selain json
+
+Membuat Format sendiri
+winston juga menyediakan format printfyang bisa kita gunakan untuk membuat formatt sendiri.
+
+Comboain Format
+winston memiliki fitur bernama combine format dimana kita bisa melakukan  kombinasi beberapa format sekaligus
+ini cocok untuk menambah informasi tambahan ke log data misal data timestamp data jarak waktu dan lain-lain
+kita bisa menggunkan combine format di winston untuk menggabungkan beberap format.
+
+File Transport
+dari namanya kita sudah tau bahwa transport ini akan menyimpamn data log ke file 
+kita bisa menambahkan langsung beberapa transport dalam satu loggger object.
+
+
