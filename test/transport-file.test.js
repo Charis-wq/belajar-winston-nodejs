@@ -1,4 +1,4 @@
-import winston from "winston";
+import winston, { level } from "winston";
 
 
 test("creat logger file transport", () => {
@@ -8,6 +8,10 @@ test("creat logger file transport", () => {
             new winston.transports.Console({}),
             new winston.transports.File({
                 filename: "app.log"
+            }),
+            new winston.transports.File({
+                level: "error",
+                filename: "app-error.log"
             }),
         ]
     });  
