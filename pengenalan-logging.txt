@@ -104,3 +104,11 @@ winston memiliki fitur otomatis yang bisa digunakan untuk menangkap exception ya
 kita bisa melakukan pengaturan ini di logger yang secara otomatis exception akan dikirim kesemua transport 
 atau kita bisa lakukan pengaturan di transport.
 
+Rejection
+selain kasus exception yang tidak terhandle kadang sering juga ada kasus di nodejs kita sering lupa menghandle promises Rejection
+
+Handle Promise Rejection
+winston juga memiliki fitur yang  isa kita gunakan untuk menangkap semua promise yang reject secara otomatis 
+jadi kita bisa melihat detail rejection tersebut 
+sama seperti exception kita juga bisa atur ini di logger ataupun di transport. 
+
