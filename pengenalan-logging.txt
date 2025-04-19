@@ -94,3 +94,13 @@ winston juga menyediakann transport lain misalnya:
 atau transport yang disediakan oleh komunitas:
 -Slack
 -Telegram
+
+Exception
+saat kita membuat program nodejs kadang kita lupa menangkap Exception
+hal ini bisa berbahaya karena nanti kita tidak bisa melakukan debug exception dengan baik sehingga kita tidak bisa menginvestigasi selanjutnya.
+
+Handle Exception
+winston memiliki fitur otomatis yang bisa digunakan untuk menangkap exception yang belum terhandle 
+kita bisa melakukan pengaturan ini di logger yang secara otomatis exception akan dikirim kesemua transport 
+atau kita bisa lakukan pengaturan di transport.
+
