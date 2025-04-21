@@ -1,0 +1,10 @@
+ExspressJS 
+expressjs adalah salah satu web framewrok opensource paling populer di nodejs
+exspressjs pertama kali dibuat tahin 2010 dan karena sangat populer exspressjs sekarang sudah menjadi hal yang wajib dikuasai ketika kita akan membuat web menggunakan nodejs.
+
+Minimalis
+exspressjs dikenal sangat minimalis tidak memiliki banyak fitur seperti web framewrok di bahasa pemograman 
+lain seperti laravel,ruby on rail atau django
+karena sangat minimalist biasanya exspressjs akan di intergrasikan dengan bayak liberary nodejs lainnya
+oleh karena itu programer bisa bebas memilih liberary nodejs yang ingin di intergrasikan dengan exspressjs.
+
